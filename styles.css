@@ -1,3 +1,77 @@
+:root{
+    /*COLORS*/
+    --color-slate-900: #1F314F;
+    --color-slate-500: #68778D;
+    --color-slate-300: #D5E1EF;
+
+    --color-blue-600: #2C7DFA;
+    --color-blue-500: #3685FF;
+
+    --color-white: #FFFFFF;
+
+    /*SPACING*/
+    --space-500: 40px;
+    --space-300: 24px;
+    --space-200: 16px;
+
+    /*FONT SIZE*/
+    --text-preset-1: 22px;
+    --text-preset-2: 15px
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: red;
+    font-family: "Outfit", sans-serif;
+    max-width: 1440px;
+    height: 960px;
+    background-color: var(--color-slate-300);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    width: 320px;
+    height: 499px;
+    background-color: var(--color-white);
+    border-radius: 20px;
+    padding: var(--space-200) var(--space-200) var(--space-500) var(--space-200);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%);
+
+}
+
+.card-image {
+    height: 288px;
+    width: 288px;
+    border-radius: 10px;
+    margin-bottom: var(--space-300);
+}
+
+.card-text {
+    text-align: center;
+    padding: 0 16px;
+}
+
+.text-primary {
+    font-size: var(--text-preset-1);
+    caret-color: var(--color-slate-900);
+    font-weight: bold;
+    line-height: 120%;
+    letter-spacing: 0px;
+    margin-bottom: 16px;
+
+}
+
+.text-secondary {
+    font-size: var(--text-preset-2);
+    color: var(--color-slate-500);
+    line-height: 140%;
+    letter-spacing: 0.2px;
 }
